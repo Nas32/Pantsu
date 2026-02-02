@@ -56,6 +56,16 @@
       display: block;
       filter: drop-shadow(0 10px 14px rgba(0,0,0,.12));
     }
+    /* Heart in top-left corner of card */
+.corner-heart {
+  position: absolute;
+  top: 16px;      /* space from top of card */
+  left: 16px;     /* space from left of card */
+  width: 60px;    /* adjust size as needed */
+  height: 60px;
+  filter: drop-shadow(0 6px 8px rgba(0,0,0,0.2));
+  z-index: 2;
+}
 
     h1 {
       font-size: clamp(26px, 4vw, 44px);
@@ -133,8 +143,10 @@
   <canvas id="confettiCanvas"></canvas>
 
   <main class="card">
+     <!-- Heart in top-left corner -->
+  <img class="corner-heart" src="valentine.png" alt="Valentine" />
    <!-- SWAN WITH HEART -->
-   <img class="art" src="swan.jpg" alt="Swan with Heart" />
+   <img class="art" src="swan.png" alt="Swan with Heart" />
 
     <h1>Pantsu❤️ will you be my valentine?</h1>
 
@@ -266,6 +278,7 @@
   </script>
 </body>
 </html>
+
 
 
 
