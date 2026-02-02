@@ -133,42 +133,52 @@
   <canvas id="confettiCanvas"></canvas>
 
   <main class="card">
-    <!-- ANIMAL WITH HEART -->
+   <!-- SWAN WITH HEART -->
     <svg class="art" viewBox="0 0 320 240" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <linearGradient id="fur" x1="0" x2="1">
-          <stop offset="0" stop-color="#f7c7a1"/>
-          <stop offset="1" stop-color="#f2a97b"/>
-        </linearGradient>
-        <linearGradient id="heart" x1="0" x2="1">
-          <stop offset="0" stop-color="#ff4d7d"/>
-          <stop offset="1" stop-color="#ff1f68"/>
-        </linearGradient>
-      </defs>
+        <defs>
+            <linearGradient id="fur" x1="0" x2="1">
+                <stop offset="0" stop-color="#f7c7a1"/>
+                <stop offset="1" stop-color="#f2a97b"/>
+            </linearGradient>
+            <linearGradient id="heart" x1="0" x2="1">
+                <stop offset="0" stop-color="#ff4d7d"/>
+                <stop offset="1" stop-color="#ff1f68"/>
+            </linearGradient>
+        </defs>
 
-      <path d="M250 50 C250 33 270 25 282 38
-               C294 25 314 33 314 50
-               C314 78 282 92 282 106
-               C282 92 250 78 250 50Z"
-            fill="url(#heart)"/>
+        <!-- Heart -->
+        <path d="M250 50 C250 33 270 25 282 38
+                 C294 25 314 33 314 50
+                 C314 78 282 92 282 106
+                 C282 92 250 78 250 50Z"
+              fill="url(#heart)"/>
 
-      <path d="M90 120 C90 70 140 40 190 60
-               C240 40 290 70 290 120
-               C290 180 240 210 190 210
-               C140 210 90 180 90 120Z"
-            fill="url(#fur)"/>
+        <!-- Body of the Swan -->
+        <path d="M110 150 C70 170 90 200 140 190
+                 C170 180 180 170 210 160
+                 C240 150 250 120 220 110
+                 C200 100 150 120 110 150Z"
+              fill="white"/>
 
-      <path d="M110 92 L95 55 L140 78 Z" fill="#f2a97b"/>
-      <path d="M270 92 L285 55 L240 78 Z" fill="#f2a97b"/>
+        <!-- Swan Neck -->
+        <path d="M140 90 C120 40 180 40 160 90
+                 C160 90 150 80 140 90Z"
+              fill="white"/>
 
-      <circle cx="160" cy="130" r="8"/>
-      <circle cx="220" cy="130" r="8"/>
+        <!-- Swan Head -->
+        <circle cx="160" cy="90" r="15" fill="white"/>
 
-      <path d="M190 144 C186 144 182 148 182 152
-               C182 160 190 164 190 170
-               C190 164 198 160 198 152
-               C198 148 194 144 190 144Z"
-            fill="#ff7aa2"/>
+        <!-- Swan Beak -->
+        <polygon points="160,90 155,100 165,100" fill="#ff7aa2"/>
+
+        <!-- Eyes -->
+        <circle cx="155" cy="85" r="3" fill="black"/>
+        <circle cx="165" cy="85" r="3" fill="black"/>
+
+        <!-- Swan Wings (Simplified) -->
+        <path d="M150 145 C130 130 170 130 160 145" fill="white"/>
+        <path d="M190 150 C210 130 250 130 220 145" fill="white"/>
+
     </svg>
 
     <h1>Pantsu❤️ will you be my valentine?</h1>
@@ -300,6 +310,7 @@
   </script>
 </body>
 </html>
+
 
 
 
